@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>1 - CSS Grid and Variable Fonts</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body class="left-layout" onload="refreshFontSize()">
+    <header>
+
+    </header>
+    <aside class="theme-editor">
+        <ul id="theme-control" class="theme-control">
+            <li>
+                <h3>Font size</h3>
+                <summary>Change the font-base size affects all typhography.</summary>
+                <div class="slider-container">
+                    <span id="range-label" class="range-label">14 px</span>
+                    <input id="slider" class="slider" type="range" name="points" min="14" max="32" value="14">
+                </div>
+                <div class="slider-minmax">
+                    <span>14</span><span>32</span>
+                </div>
+            </li>
+        </ul>
+    </aside>
+    <main class="main">
+        <header class="tile-title">
+            <h1>Weather Hunter</h1>
+            <h3>31° Munich · DE</h3>
+        </header>
+        <section class="card-grid">
+            <article>
+                <div class="card" style="background: no-repeat center center url(media/portal.jpg); background-size: auto 100%">
+                </div>
+            </article>
+            <article>
+                <div class="card" style="background: no-repeat center top url(media/english_garden.jpg); background-size: 100%">
+                </div>
+            </article>
+            <article class="more-pictures">
+                <div>
+                    <h1>MORE</h1>
+                    <h2>PICTURES</h2>
+                </div>
+            </article>
+            <article>
+                <div class="card">
+                    <h2>26°</h2>
+                    <summary>Dachau<span>DE</span></summary>
+                </div>
+            </article>
+            <article>
+                <div class="card" style="background: no-repeat center center url(media/dachau.jpg); background-size: auto 100%">
+                </div>
+            </article>
+            <article>
+                <div class="card card-video">
+                    <div class="video-overlay">
+                        <img src="media/play.svg"/>    
+                    </div>
+                    <video id="video" loop muted class="card-video">
+                        <source src="media/run.mp4" type="video/mp4">
+                    </video>                    
+                </div>
+            </article>
+            <article>
+                <div class="card card-night">
+                    <h2>18°</h2>
+                    <summary>Starnberg<span>DE</span></summary>
+                </div>
+            </article>
+            <article>
+                <div class="card" style="background: no-repeat center center url(media/starnberg.jpg); background-size: auto 100%">
+                </div>
+            </article>
+        </section>
+        <aside class="acessibility-controls">
+
+        </aside>
+        <div class="bg-image"></div>
+    </main>
+</body>
+<script src='main.js'></script>
+</html>

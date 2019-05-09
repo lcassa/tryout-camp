@@ -1,0 +1,97 @@
+
+/* defining variable font roman */
+@font-face {
+    font-family: 'PlexSansVar';
+    src: url('fonts/IBMPlexSansVar-Roman.woff2') format('woff2-variations'),
+        url('fonts/IBMPlexSans-Text.woff2') format('woff2');
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: normal;
+}
+/* defining variable font italic, yes the same font-family */
+@font-face {
+    font-family: 'PlexSansVar';
+    src: url('fonts/IBMPlexSansVar-Italic.woff2') format('woff2-variations'),
+        url('fonts/IBMPlexSans-Italic.woff2') formart('woff2');
+    font-weight: 50 950;
+    font-stretch: 75% 125%;
+    font-style: italic;
+}
+/* fallback to browsers that don't support variable fonts and need bold */
+@font-face {
+    font-family: 'PlexSansVar';
+    src: url('fonts/IBMPlexSansVar-Roman.woff2') format('woff2-variations'),
+        url('fonts/IBMPlexSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --border-radius: 6px; 
+    --card-height: 12.5vw;
+    --card-width: 13vw;
+    --theme-editor-width: 20vw;
+    --margin-top: 3vw;
+}
+
+html {
+    font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+body {
+    font-family: 'PlexSansVar', system-ui, -apple-system;
+    margin: 2vw;
+    background-color: #252526;
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-variation-settings: 'wght' 200;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-variation-settings: 'wght' 100;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-variation-settings: 'wght' 200;
+    margin-top: .5ex;
+    margin-bottom: 1ex;
+}
+
+span {
+    font-size: .7rem;
+    font-variation-settings: 'wght' 100;
+    margin-top: .5ex;
+    margin-bottom: 1ex;
+}
+
+summary {
+    font-style: italic;
+    font-size: .7rem;
+    font-variation-settings: 'wght' 300;
+}
